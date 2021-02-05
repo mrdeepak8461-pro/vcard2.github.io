@@ -1,0 +1,287 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+    font-family: "Jost", sans-serif;
+}
+html {
+    font-size: 45%;
+}
+//var css
+$main_c: #f6ebe7;
+
+//mixin
+@mixin itam_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//start main.css
+.main_container {
+    max-width: 450px;
+    margin: auto;
+}
+header {
+    background-image: url("../images/bg1.png");
+    background-size: 100% 100%;
+    padding: 0rem 2rem;
+    text-align: center;
+    color: white;
+    border: 0.1rem solid transparent;
+    .header_hed {
+        width: 100%;
+        background-color: $main_c;
+        border-radius: 0rem 0rem 2rem 2rem;
+        margin: 0rem 0rem 2rem 0rem;
+        .view {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            font-size: 2rem;
+            padding: 1rem 0rem;
+            color: black;
+            font-weight: bold;
+            span {
+                margin: 0px 0px 0px 5px;
+            }
+        }
+    }
+    .header_main {
+        img {
+            height: 15rem;
+            width: 15rem;
+            border-radius: 2rem;
+            margin-top: 5rem;
+        }
+        .shochal_media {
+            width: 80%;
+            margin: 3rem auto;
+            padding-bottom: 3rem;
+            a {
+                margin: 1rem;
+                background-color: $main_c;
+                i {
+                    color: black;
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
+}
+//end of header
+//start main
+.contect_box {
+    @include itam_center;
+    text-align: center;
+    background-color: $main_c;
+    h3 {
+        letter-spacing: 0.3rem;
+        margin-top: 5rem;
+        margin-bottom: 1rem;
+    }
+    h5 {
+        margin: 1rem;
+        letter-spacing: 0.2rem;
+        font-size: 2rem;
+    }
+}
+
+//end of contect_box
+
+.service_menu {
+    width: 90%;
+    margin: 20px auto;
+    h1 {
+        font-weight: 500;
+        margin: 50px 0px;
+    }
+    ul {
+        li {
+            font-size: 2rem;
+            i {
+                font-size: 2rem;
+                margin-right: 4rem;
+            }
+        }
+    }
+    .payment_option {
+        img {
+            width: 200px;
+            height: 200px;
+            display: block;
+            margin: 4rem auto;
+        }
+        .btn_1 {
+            background-color: black;
+            color: white;
+            display: block;
+            margin: auto;
+            width: 50%;
+            font-size: bold;
+            i {
+                font-size: 3rem;
+            }
+        }
+    }
+}
+//end of service_menu
+
+.owner {
+    margin-top: 5rem;
+    padding: 3rem 1.5rem;
+    background-color: $main_c;
+    img {
+        display: block;
+        margin: 2rem auto;
+    }
+    p {
+        font-size: 2.4rem;
+    }
+}
+//owner
+
+.shop {
+    padding: 3rem 1.5rem;
+    h1 {
+        margin-bottom: 3rem;
+    }
+    .card {
+        .card-content {
+            p {
+                a {
+                    font-size: 2rem;
+                    color: black;
+                }
+            }
+        }
+        .card-reveal {
+            p {
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+.beauty_box {
+    background-color: $main_c;
+    margin: 5rem 0rem;
+    padding: 5.9rem 1.5rem;
+    p {
+        font-size: 2.4rem;
+    }
+}
+
+.gift_cards {
+    margin: 5rem 0rem;
+    padding: 5.9rem 1.5rem;
+    p {
+        font-size: 2.4rem;
+    }
+}
+//end of gift_card
+.blog {
+    background-color: $main_c;
+    margin: 5rem 0rem;
+    padding: 5.9rem 1.5rem;
+    h1 {
+        font-weight: 500;
+    }
+    img {
+        margin-top: 5rem;
+        border-radius: 0.5rem;
+    }
+    p {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-top: 3rem;
+    }
+    h2 {
+        font-size: 3rem;
+        text-align: center;
+    }
+}
+// end of blog
+
+.videos_section {
+    margin: 5rem 0rem;
+    padding: 5.9rem 1.5rem;
+    @include itam_center;
+    flex-direction: column;
+    h3 {
+        font-weight: bold;
+        text-align: center;
+        font-size: 3rem;
+    }
+    h1 {
+        font-size: 3.5rem;
+        text-align: center;
+        font-weight: 500;
+        line-height: 4.8rem;
+    }
+    .video-container {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+.follow_us {
+    background-color: $main_c;
+    padding: 5rem 1.5rem;
+    text-align: center;
+    h3 {
+        font-weight: bold;
+    }
+    p {
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+    }
+    i {
+        font-size: 4rem;
+        margin: 2rem;
+        margin-bottom: 4rem;
+        font-weight: bold;
+    }
+    .input-field {
+        input {
+            margin-top: 4rem;
+        }
+        label {
+            font-size: 3rem;
+        }
+    }
+    .btn {
+        background-color: black;
+        i{
+            font-size: 2rem;
+            margin:0px;
+            margin-left:1.5rem;
+        }
+    }
+}
+
+.instagram{
+    background-color: $main_c;
+    padding: 3rem 1.5rem;
+    background-color: black;
+    color: white;
+    img{
+        margin-top: 1rem;
+    }
+    .btn{
+        background-color: black;
+        width: 80%;
+        display: block;
+        margin: 5rem auto;
+        
+        border:0.2rem solid white;
+    }
+}
+footer{
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+}
